@@ -1,0 +1,38 @@
+require 'sinatra/base'
+require 'rack/rdf'
+
+module Sinatra
+  ##
+  # To override negotiation on Content-Type, set :format in `linkeddata_options` to a RDF Format class, or symbol identifying a format.
+  #
+  # @see http://www.sinatrarb.com/extensions.html
+  module RDF
+    autoload :VERSION, 'sinatra/rdf/version'
+
+    ##
+    # Helper methods.
+    module Helpers
+      # TODO
+    end
+
+    ##
+    # * Registers Rack::LinkedData::ContentNegotiation
+    # * adds helpers
+    # * includes RDF and LinkedData
+    # * defines `linkeddata_options`, which are passed to the Rack middleware
+    #   available as `settings.linkeddata_options` and as options within
+    #   the LinkedData Rack middleware.
+    #
+    # @param  [Sinatra::Base] app
+    # @return [void]
+    def self.registered(app)
+      options = {}
+      app.set :linkeddata_options, options
+      app.use(Rack::RDF::ContentNegotiation, options)
+      app.helpers(Sinatra::RDF::Helpers)
+      app.send(:include, ::RDF)
+    end
+  end
+end
+
+Sinatra.register(Sinatra::RDF)
