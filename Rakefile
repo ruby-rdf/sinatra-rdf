@@ -8,14 +8,14 @@ task :default => :spec
 task :specs => :spec
 
 namespace :gem do
-  desc "Build the sinatra-linkeddata-#{File.read('VERSION').chomp}.gem file"
+  desc "Build the sinatra-rdf-#{File.read('VERSION').chomp}.gem file"
   task :build do
-    sh "gem build sinatra-linkeddata.gemspec && mv sinatra-linkeddata-#{File.read('VERSION').chomp}.gem pkg/"
+    sh "gem build sinatra-rdf.gemspec && mv sinatra-rdf-#{File.read('VERSION').chomp}.gem pkg/"
   end
 
-  desc "Release the sinatra-linkeddata-#{File.read('VERSION').chomp}.gem file"
+  desc "Release the sinatra-rdf-#{File.read('VERSION').chomp}.gem file"
   task :release do
-    sh "gem push pkg/sinatra-linkeddata-#{File.read('VERSION').chomp}.gem"
+    sh "gem push pkg/sinatra-rdf-#{File.read('VERSION').chomp}.gem"
   end
 end
 
