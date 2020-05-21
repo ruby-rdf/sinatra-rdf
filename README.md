@@ -5,16 +5,16 @@ negotiation for Sinatra applications.
 
 This version is based on [rack-linkeddata][] without the hard dependency on the [linkeddata][] gem, to allow applications to better manage their dependencies
 
-* <http://github.com/datagraph/sinatra-rdf>
+* <https://github.com/ruby-rdf/sinatra-rdf>
 
-[![Gem Version](https://badge.fury.io/rb/sinatra-rdf.svg)](http://badge.fury.io/rb/sinatra-rdf)
-[![Build Status](https://travis-ci.org/ruby-rdf/sinatra-rdf.svg?branch=master)](http://travis-ci.org/ruby-rdf/sinatra-rdf)
+[![Gem Version](https://badge.fury.io/rb/sinatra-rdf.svg)](https://badge.fury.io/rb/sinatra-rdf)
+[![Build Status](https://travis-ci.org/ruby-rdf/sinatra-rdf.svg?branch=master)](https://travis-ci.org/ruby-rdf/sinatra-rdf)
 
 ## Features
 
 * Implements [HTTP content negotiation][conneg] for RDF content types using
   the [`Rack::RDF`][Rack::RDF] middleware.
-* Supports all [RDF.rb][]-compatible serialization formats.
+* Supports all [RDF.rb][] -compatible serialization formats.
 * Supports both classic and modular Sinatra applications.
 
 ## Examples
@@ -118,12 +118,12 @@ operation and details of the content negotiation.
 
 ## Dependencies
 
-* [Sinatra](http://rubygems.org/gems/sinatra) (~> 2.0)
-* [Rack::RDF](http://rubygems.org/gems/rack-rdf) (~> 3.1)
+* [Sinatra](https://rubygems.org/gems/sinatra) (~> 2.0)
+* [Rack::RDF](https://rubygems.org/gems/rack-rdf) (~> 3.1)
 
 ## Installation
 
-The recommended installation method is via [RubyGems](http://rubygems.org/).
+The recommended installation method is via [RubyGems](https://rubygems.org/).
 To install the latest official release of the gem, do:
 
     % [sudo] gem install sinatra-rdf
@@ -137,29 +137,29 @@ To get a local working copy of the development repository, do:
 Alternatively, you can download the latest development version as a tarball
 as follows:
 
-    % wget http://github.com/ruby-rdf/sinatra-rdf/tarball/master
+    % wget https://github.com/ruby-rdf/sinatra-rdf/tarball/master
 
 ## References
 
-* <http://www.w3.org/DesignIssues/LinkedData.html>
-* <http://linkeddata.org/docs/how-to-publish>
-* <http://linkeddata.org/conneg-303-redirect-code-samples>
-* <http://www.w3.org/TR/cooluris/>
-* <http://www.w3.org/TR/swbp-vocab-pub/>
-* <http://patterns.dataincubator.org/book/publishing-patterns.html>
+* <https://www.w3.org/DesignIssues/LinkedData.html>
+* <https://linkeddata.org/docs/how-to-publish>
+* <https://linkeddata.org/conneg-303-redirect-code-samples>
+* <https://www.w3.org/TR/cooluris/>
+* <https://www.w3.org/TR/swbp-vocab-pub/>
+* <https://patterns.dataincubator.org/book/publishing-patterns.html>
 
 ## Authors
 
-* [Arto Bendiken](http://github.com/bendiken) - <http://ar.to/>
+* [Arto Bendiken](https://github.com/artob) - <https://ar.to/>
 
 ## License
 
 `Sinatra::RDF` is free and unencumbered public domain software. For more
-information, see <http://unlicense.org/> or the accompanying UNLICENSE file.
+information, see <https://unlicense.org/> or the accompanying UNLICENSE file.
 
-[Sinatra]:          http://www.sinatrarb.com/
-[Rack]:             http://rack.github.com/
-[RDF.rb]:           http://ruby-rdf.github.com/rdf/
-[Rack::RDF]:        http://datagraph.rubyforge.org/rack-rdf/
-[Linked Data]:      http://linkeddata.org/
-[conneg]:           http://en.wikipedia.org/wiki/Content_negotiation
+[Sinatra]:          https://www.sinatrarb.com/
+[Rack]:             https://rack.github.com/
+[RDF.rb]:           https://ruby-rdf.github.com/rdf/
+[Rack::RDF]:        https://rubygems.org/gems/rack-rdf/
+[Linked Data]:      https://linkeddata.org/
+[conneg]:           https://en.wikipedia.org/wiki/Content_negotiation

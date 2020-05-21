@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.date               = File.mtime('VERSION').strftime('%Y-%m-%d')
 
   gem.name               = 'sinatra-rdf'
-  gem.homepage           = 'http://ruby-rdf.github.com/sinatra-rdf'
+  gem.homepage           = 'https://ruby-rdf.github.com/sinatra-rdf'
   gem.license            = 'Unlicense'
   gem.summary            = 'Linked Data content negotiation for Sinatra applications.'
   gem.description        = 'Sinatra extension for Linked Data content negotiation.'
