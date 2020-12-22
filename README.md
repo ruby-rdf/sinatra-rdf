@@ -8,7 +8,8 @@ This version is based on [rack-linkeddata][] without the hard dependency on the 
 * <https://github.com/ruby-rdf/sinatra-rdf>
 
 [![Gem Version](https://badge.fury.io/rb/sinatra-rdf.svg)](https://badge.fury.io/rb/sinatra-rdf)
-[![Build Status](https://travis-ci.org/ruby-rdf/sinatra-rdf.svg?branch=master)](https://travis-ci.org/ruby-rdf/sinatra-rdf)
+[![Build Status](https://github.com/ruby-rdf/sinatra-rdf/workflows/CI/badge.svg?branch=develop)](https://github.com/ruby-rdf/sinatra-rdf/actions?query=workflow%3ACI)
+[![Gitter chat](https://badges.gitter.im/ruby-rdf/rdf.png)](https://gitter.im/ruby-rdf/rdf)
 
 ## Features
 
