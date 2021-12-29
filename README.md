@@ -14,7 +14,7 @@ This version is based on [rack-linkeddata][] without the hard dependency on the 
 ## Features
 
 * Implements [HTTP content negotiation][conneg] for RDF content types using
-  the [`Rack::RDF`][Rack::RDF] middleware.
+  the `[Rack::RDF][Rack::RDF]` middleware.
 * Supports all [RDF.rb][] -compatible serialization formats.
 * Supports both classic and modular Sinatra applications.
 
@@ -92,7 +92,7 @@ run My::Application
 ## Description
 
 `Sinatra::RDF` is a thin Sinatra-specific wrapper around the
-[`Rack::RDF`][Rack::RDF] middleware, which implements Linked
+`[Rack::RDF][Rack::RDF]` middleware, which implements Linked
 Data content negotiation for Rack applications.
 
 At the moment the Sinatra extension simply corresponds
@@ -119,8 +119,8 @@ operation and details of the content negotiation.
 
 ## Dependencies
 
-* [Sinatra](https://rubygems.org/gems/sinatra) (~> 2.0)
-* [Rack::RDF](https://rubygems.org/gems/rack-rdf) (~> 3.1)
+* [Sinatra](https://rubygems.org/gems/sinatra) (~> 2.1)
+* [Rack::RDF](https://rubygems.org/gems/rack-rdf) (~> 3.2)
 
 ## Installation
 
