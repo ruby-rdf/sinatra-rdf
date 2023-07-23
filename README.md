@@ -119,7 +119,7 @@ operation and details of the content negotiation.
 
 ## Dependencies
 
-* [Sinatra](https://rubygems.org/gems/sinatra) (~> 2.1)
+* [Sinatra](https://rubygems.org/gems/sinatra) (~> 3.0)
 * [Rack::RDF](https://rubygems.org/gems/rack-rdf) (~> 3.2)
 
 ## Installation
