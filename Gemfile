@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rdf',                git: 'https://github.com/ruby-rdf/rdf.git',          branch: 'develop'
+gem 'rdf-vocab',          git: 'https://github.com/ruby-rdf/rdf-vocab.git',    branch: 'develop'
 gem 'rack-rdf',           git: 'https://github.com/ruby-rdf/rack-rdf.git',     branch: 'develop'
 
 group :development do

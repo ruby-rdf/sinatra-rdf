@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require 'rack/rdf'
+require 'rdf'
+require 'rdf/vocab'
 
 module Sinatra
   ##
@@ -31,6 +33,7 @@ module Sinatra
       app.use(Rack::RDF::ContentNegotiation, options)
       app.helpers(Sinatra::RDF::Helpers)
       app.send(:include, ::RDF)
+      app.send(:include, ::RDF::Vocab)
     end
   end
 end
