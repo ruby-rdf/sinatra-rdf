@@ -5,6 +5,7 @@ require 'rdf/turtle'
 
 class SPTest < Sinatra::Base
   register Sinatra::RDF
+  set :host_authorization, { permitted_hosts: [] }
 
   get '/' do
     body "A String"
